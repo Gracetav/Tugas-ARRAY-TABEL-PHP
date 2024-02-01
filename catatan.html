@@ -1,0 +1,51 @@
+//RANGKUMAN
+// Array asosiatif.
+// Ia adalah suatu array di mana key atau kuncinya bukan berupa indeks integer yang dimulai dari 0, akan tetapi yang menjadi key-nya adalah suatu teks bertipe data string.
+
+// Berikut ini adalah contoh dari array asosiatif:
+    // $mahasiswa = [
+    //   'nama' => 'Nurul Huda',
+    //   'domisili' => 'Surabaya',
+    //   'jenis_kelamin' => 'Laki-laki'
+    // ];
+
+    // Untuk menampilkan item yang berada di dalam array asosiatif, kita bisa melakukannya dengan memanggil key-nya. Hal ini sama persis dengan array terindeks, hanya saja jika pada array terindeks key-nya bertipe data integer, maka pada array asosisatif, key-nya bertipe data string.
+
+// Perhatikan kode program berikut:
+    // echo "Nama : {$mahasiswa['nama']}<br>";
+    // echo "Domisili : {$mahasiswa['domisili']}<br>";
+    // echo "Jenis Kelamin : {$mahasiswa['jenis_kelamin']}<br>";
+
+
+
+    // Array multidimensi adalah suatu istilah untuk sebuah array, yang mana ia memiliki item berupa array yang lain. Contohnya seperti ini:
+// $histogram = [
+//   [1, 2, 3, 4, 5],
+//   [6, 7, 3, 9, 2],
+//   [3, 5, 1, 0, 5],
+//   [5, 8, 1, 3, 1]
+// ];
+
+// Pada contoh di atas, indeks ke-0 dari array $histogram adalah suatu array. Begitu juga indeks ke-1, ke-2, dan ke-3.
+
+// Misal kita ingin menampilkan anga 0 pada array tersebut, maka kita harus memanggil array terluarnya dahulu, baru indeks dari array yang didalam.
+
+// Perhatikan kode program berikut:
+// $histogram = [
+//   [1, 2, 3, 4, 5],
+//   [6, 7, 3, 9, 2],
+//   [3, 5, 1, 0, 5],
+//   [5, 8, 1, 3, 1]
+// ];
+
+// echo $histogram[2][3]; // 0
+
+// Array multidimensi tidak mengharuskan setiap item dari array adalah suatu array dengan panjang yang sama, bahkan tidak harus semua item dari suatu array bertipe data sama. Hal itu karena array dalam PHP bisa memiliki himpunan nilai dari tipe data yang berbeda-beda.
+// $arrayMultidimensi = [
+//   "Nurul Huda",
+//   "Lendis Fabri",
+//   [1, 2, 3, 4, 5],
+//   [3.4, 10.93],
+//   true,
+//   false
+// ];
